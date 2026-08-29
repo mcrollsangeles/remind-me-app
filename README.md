@@ -1,6 +1,6 @@
 # RemindMeApp
 
-A simple reminder app built with **Expo SDK 57** + **React Native**. It works like an alarm clock, but instead of a ringing alarm it fires a **local push notification** (with the Psyduck sound ) at the time you set.
+A simple reminder app built with **Expo SDK 57** + **React Native**. It works like an alarm clock, but instead of a ringing alarm it fires a **local push notification** (with the Psyduck sound) at the time you set.
 
 ## Features
 
@@ -12,9 +12,19 @@ A simple reminder app built with **Expo SDK 57** + **React Native**. It works li
 - **Persistent storage** - reminders are stored locally with AsyncStorage (no database or account needed).
 
 ## Screens
+
 | **Reminders (List)** | All reminders with schedule summaries, enable/disable switches, and delete actions. Floating **＋** creates a new one. |
 | **New Reminder** | Form to create a notification: title, message, date/time pickers, repeat options, and a sound preview. |
 | **Edit Reminder** | Same form, pre-filled, to update or delete an existing reminder. |
+| **Push Notification** | The local notification (with the Psyduck sound) that fires at the scheduled time. |
+
+| Reminders (List) | New Reminder |
+|------------------|--------------|
+| ![Reminders (List)](screenshots/ReminderList.jpg) | ![New Reminder](screenshots/NewReminder.jpg) |
+
+| Edit Reminder | Push Notification |
+|---------------|-------------------|
+| ![Edit Reminder](screenshots/EditReminder.jpg) | ![Push Notification](screenshots/PushNotif.jpg) |
 
 ## Tech stack
 
@@ -30,17 +40,19 @@ A simple reminder app built with **Expo SDK 57** + **React Native**. It works li
 
 Prerequisites: Node.js, and either the Expo Go app on your phone or an emulator.
 
-```sh
-npm install
-```
+1. Install the dependencies:
 
-Run in development:
+   ```sh
+   npm install
+   ```
 
-```sh
-npm start     # Expo dev server (QR to open in Expo Go)
-npm run web   # run in the browser
-npm test      # run the Jest test suite
-```
+2. Run in development:
+
+   ```sh
+   npm start     # Expo dev server (QR to open in Expo Go)
+   npm run web   # run in the browser
+   npm test      # run the Jest test suite
+   ```
 
 > **Note:** the custom Psyduck sound only plays in a **development/standalone build** (Expo Go falls back to the default sound). Remote push notifications are unavailable in Expo Go on Android since SDK 53 — this app uses **local** notifications, which do work.
 
