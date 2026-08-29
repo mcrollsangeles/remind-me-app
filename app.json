@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Remind Me",
-    "slug": "RemindMeApp",
+    "slug": "remind-me-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/psyduck-icon.png",

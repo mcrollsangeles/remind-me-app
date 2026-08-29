@@ -1,4 +1,4 @@
-# RemindMeApp
+# Remind Me
 
 A simple reminder app built with **Expo SDK 57** + **React Native**. It works like an alarm clock, but instead of a ringing alarm it fires a **local push notification** (with the Psyduck sound) at the time you set.
 
